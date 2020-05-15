@@ -1,0 +1,3 @@
+0 11 * * * python3 /home/pi/PiFarmRPI/soilMoisture.py
+0 15 * * * python3 /home/pi/PiFarmRPI/soilMoisture.py
+@reboot python3 /home/pi/PiFarmRPI/monitorAnalogSensors.py
