@@ -20,7 +20,7 @@ def activatePump(moistureReading):
         setupGPIO(relayPin)             #prepare GPIO to send signal to relay
         GPIO.output(relayPin,GPIO.LOW)  #closes circuit in relay and turns pump on
         print('Pumped turned on.\n')
-        time.sleep(15)                 #Keeps circuit closed for 5 minutes allowing pump to be on for 5 minutes
+        time.sleep(300)                 #Keeps circuit closed for 5 minutes allowing pump to be on for 5 minutes
         GPIO.output(relayPin,GPIO.HIGH) #reopens circuit in relay and turns off the pump 
         print('Pumped turned off after 5 minutes.\n')
         cleanUpGPIO()
